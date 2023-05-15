@@ -6,6 +6,7 @@ import SignUp from "../pages/SignUp/SignUp";
 import Checkout from "../pages/Checkout/Checkout";
 import Bookings from "../pages/Bookings/Bookings";
 import PrivateRoute from "./PrivateRoute";
+import About from "../pages/Home/About/About";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "about",
+        element: <About></About>
       },
       {
         path: "login",
